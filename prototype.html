@@ -39,11 +39,24 @@
 
 <body unresolved class="fullbleed">
   <paper-drawer-panel id="drawer_panel" disable-swipe force-narrow>
-    <paper-header-panel drawer mode="seamed">
-      <div id="drawer_content"></div>
+    <paper-header-panel drawer="" mode="seamed" at-top="">
+      <div id="drawer_content" style="border: none;"></div>
     </paper-header-panel>
-    <paper-header-panel main mode="seamed">
-      <iron-pages id="app_content" attr-for-selected="id"></iron-pages>
+    <paper-header-panel main="" mode="seamed" at-top="">
+      <iron-pages id="app_content" attr-for-selected="id">
+        <section id="inicio">
+          <poly-layout id="poly2" layout="horizontal" align="center" justify="center-justified" flex="flex-1" style="color: rgb(25, 118, 210); margin: 50px 10px 35px;">
+            <poly-icon-button icon="favorite" src="" link="" id="poly3" style="width: 300px; height: 300px;"></poly-icon-button>
+          </poly-layout>
+          <poly-layout id="poly9" align="" justify="" layout="vertical">
+            <poly-input label="Usuario" type="text" value="" link="" id="poly11" style="padding: 0px 30px; margin: 5px 20px;"></poly-input>
+            <poly-input label="Contraseña" type="password" value="" link="" id="poly10" style="margin: 5px 20px; padding: 0px 30px;"></poly-input>
+          </poly-layout>
+          <poly-layout id="poly15" layout="" align="center" justify="center-justified">
+            <poly-button text="Regístrate" icon="" raised="" link="" id="poly19" style="margin: 20px 0px;"></poly-button>
+          </poly-layout>
+        </section>
+      </iron-pages>
     </paper-header-panel>
   </paper-drawer-panel>
 
